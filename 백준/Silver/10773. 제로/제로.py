@@ -1,4 +1,5 @@
-k=int(input())
+import sys
+k=int(sys.stdin.readline())
 arr=[]
 for i in range(k):
     a=int(input())
