@@ -1,12 +1,12 @@
-a=int(input())
-b=[]
-for i in range(a):
-    b.append(input())
+n=int(input())
+dic={}
+for i in range(n):
+    a=input()
+    if a in dic:
+        pass
+    else:
+        dic[a]=1
+sorted_dic=sorted(dic)
 
-b_set=list(set(b))
-
-b_set.sort()
-b_set.sort(key=len)
-
-
-print(*b_set)
+sorsorted_dic=sorted(sorted_dic,key=len)
+print(*sorsorted_dic)
