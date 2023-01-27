@@ -9,5 +9,4 @@ b_set.sort()
 b_set.sort(key=len)
 
 
-for j in b_set:
-    print(j)
+print(*b_set)
