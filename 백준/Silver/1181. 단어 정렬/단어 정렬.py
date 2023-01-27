@@ -1,7 +1,8 @@
-n=int(input())
+import sys
+n=int(sys.stdin.readline())
 dic={}
 for i in range(n):
-    a=input()
+    a=sys.stdin.readline().rstrip()
     if a in dic:
         pass
     else:
@@ -9,4 +10,4 @@ for i in range(n):
 sorted_dic=sorted(dic)
 
 sorsorted_dic=sorted(sorted_dic,key=len)
-print(*sorsorted_dic)
+print(*sorsorted_dic,sep='\n')
