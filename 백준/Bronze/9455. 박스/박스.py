@@ -1,9 +1,10 @@
-t=int(input())
+import sys
+t=int(sys.stdin.readline())
 
 for i in range(t):
     result=0
-    n,m=map(int,input().split())
-    arr=[list(map(int,input().split())) for i in range(n)]
+    n,m=map(int,sys.stdin.readline().split())
+    arr=[list(map(int,sys.stdin.readline().split())) for i in range(n)]
     
     for x in range(m):
         for y in range(n):
